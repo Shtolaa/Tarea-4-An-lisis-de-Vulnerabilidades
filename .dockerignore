@@ -1,0 +1,8 @@
+.git/
+__pycache__/
+.pytest_cache/
+data/repos/
+reports/codeql/databases/
+*.pyc
+.DS_Store
+Thumbs.db

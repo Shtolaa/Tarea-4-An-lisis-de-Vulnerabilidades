@@ -1,0 +1,14 @@
+# Local clones and heavy generated internals
+data/repos/
+reports/codeql/databases/
+
+# Local caches
+__pycache__/
+.pytest_cache/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+
+.env
+.env.*

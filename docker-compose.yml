@@ -1,0 +1,19 @@
+services:
+  flowise-vuln-analysis:
+    build:
+      context: .
+      args:
+        SYFT_VERSION: latest
+        GRYPE_VERSION: latest
+        CODEQL_VERSION: latest
+    image: flowise-vuln-analysis:latest
+    working_dir: /workspace
+    environment:
+      ORG: FlowiseAI
+      TOP: "5"
+      SKIP_CODEQL: "0"
+      REFRESH_REPOS: "0"
+      GITHUB_TOKEN: ${GITHUB_TOKEN:-}
+    volumes:
+      - .:/workspace
+    command: ["bash", "scripts/run_all.sh"]
