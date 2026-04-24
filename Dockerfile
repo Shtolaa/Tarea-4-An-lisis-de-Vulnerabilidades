@@ -14,6 +14,8 @@ RUN apt-get update \
         curl \
         git \
         jq \
+        nodejs \
+        npm \
         unzip \
     && rm -rf /var/lib/apt/lists/*
 
@@ -44,6 +46,7 @@ RUN set -eux; \
     curl -sSfL "${CODEQL_URL}" -o /tmp/codeql-bundle-linux64.tar.gz; \
     tar -xzf /tmp/codeql-bundle-linux64.tar.gz -C /opt; \
     rm /tmp/codeql-bundle-linux64.tar.gz; \
+    ln -sf /opt/codeql/codeql /usr/local/bin/codeql; \
     codeql version
 
 WORKDIR /workspace

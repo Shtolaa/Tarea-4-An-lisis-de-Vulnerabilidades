@@ -8,7 +8,7 @@ import subprocess
 import sys
 
 
-TOOLS = ["git", "python", "syft", "grype", "codeql"]
+TOOLS = ["git", "python", "node", "npm", "syft", "grype", "codeql"]
 
 
 def version(command: str) -> str:

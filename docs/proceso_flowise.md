@@ -8,6 +8,7 @@ Instalar y dejar en `PATH`:
 
 - `git`
 - `python` 3.10 o superior
+- `node` y `npm` para que CodeQL pueda extraer TypeScript/JavaScript
 - `syft` para generar SBOM CycloneDX
 - `grype` para analizar vulnerabilidades desde el SBOM
 - `codeql` CLI para analisis estatico de codigo
@@ -42,7 +43,7 @@ python scripts/check_prereqs.py
 
 ## 2. Ejecucion con Docker
 
-La forma mas portable es Docker, porque instala dentro de la imagen todas las herramientas necesarias: `git`, `python`, `syft`, `grype` y `codeql`.
+La forma mas portable es Docker, porque instala dentro de la imagen todas las herramientas necesarias: `git`, `python`, `node`, `npm`, `syft`, `grype` y `codeql`.
 
 Construir la imagen:
 
