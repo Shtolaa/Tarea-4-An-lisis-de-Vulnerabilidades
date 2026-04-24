@@ -199,7 +199,7 @@ Salidas:
 - `reports/codeql/<repo>-<lenguaje>.sarif`
 - `reports/codeql/databases/<repo>-<lenguaje>/`
 
-El script detecta lenguajes soportados por extension y usa las consultas predeterminadas disponibles en la instalacion local de CodeQL. Para un analisis mas focalizado, se puede pasar una consulta o suite explicita si esta disponible en la instalacion local:
+El script detecta lenguajes soportados por extension y crea bases CodeQL con `--build-mode=none` para lenguajes que lo soportan, como JavaScript/TypeScript y Python. Esto evita fallos de `autobuild` en proyectos grandes como Flowise. Para un analisis mas focalizado, se puede pasar una consulta o suite explicita si esta disponible en la instalacion local:
 
 ```powershell
 python scripts/run_codeql.py --queries security-extended

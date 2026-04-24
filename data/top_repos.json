@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-24T15:49:22.967224+00:00",
+  "generated_at": "2026-04-24T15:58:00.613064+00:00",
   "organization": "FlowiseAI",
   "selection_criteria": "Top public, non-fork repositories in the organization, sorted by stargazers_count descending using the GitHub REST API.",
   "api_endpoint": "https://api.github.com/orgs/FlowiseAI/repos",

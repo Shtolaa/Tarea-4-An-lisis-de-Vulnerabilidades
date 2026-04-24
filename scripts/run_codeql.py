@@ -30,6 +30,14 @@ LANGUAGE_BY_EXTENSION = {
     ".rb": "ruby",
 }
 
+NO_BUILD_LANGUAGES = {
+    "csharp",
+    "java-kotlin",
+    "javascript-typescript",
+    "python",
+    "ruby",
+}
+
 
 def detect_languages(repo_dir: Path) -> list[str]:
     found: set[str] = set()
@@ -41,6 +49,48 @@ def detect_languages(repo_dir: Path) -> list[str]:
         if language:
             found.add(language)
     return sorted(found)
+
+
+def run_command(command: list[str]) -> subprocess.CompletedProcess:
+    print("+ " + " ".join(str(part) for part in command))
+    return subprocess.run(command, check=True)
+
+
+def create_database(database: Path, language: str, source: Path) -> None:
+    create_command = [
+        "codeql",
+        "database",
+        "create",
+        f"--language={language}",
+        f"--source-root={source}",
+        "--overwrite",
+    ]
+    if language in NO_BUILD_LANGUAGES:
+        create_command.append("--build-mode=none")
+    create_command.append(str(database))
+
+    try:
+        run_command(create_command)
+        return
+    except subprocess.CalledProcessError:
+        if language not in NO_BUILD_LANGUAGES:
+            raise
+
+    fallback_command = [
+        "codeql",
+        "database",
+        "create",
+        f"--language={language}",
+        f"--source-root={source}",
+        "--overwrite",
+        "--command=true",
+        str(database),
+    ]
+    print(
+        "CodeQL database create failed with --build-mode=none; "
+        "retrying with a no-op manual build command."
+    )
+    run_command(fallback_command)
 
 
 def main() -> int:
@@ -84,18 +134,7 @@ def main() -> int:
         for language in languages:
             database = db_dir / f"{name}-{language}"
             sarif = out_dir / f"{name}-{language}.sarif"
-            if not database.exists():
-                create_command = [
-                    "codeql",
-                    "database",
-                    "create",
-                    str(database),
-                    f"--language={language}",
-                    f"--source-root={source}",
-                    "--overwrite",
-                ]
-                print("+ " + " ".join(str(part) for part in create_command))
-                subprocess.run(create_command, check=True)
+            create_database(database, language, source)
 
             analyze_command = [
                 "codeql",
@@ -107,8 +146,7 @@ def main() -> int:
             ]
             if args.queries:
                 analyze_command.insert(4, args.queries)
-            print("+ " + " ".join(str(part) for part in analyze_command))
-            subprocess.run(analyze_command, check=True)
+            run_command(analyze_command)
 
     return 0
 
