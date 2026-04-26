@@ -1,0 +1,25 @@
+{
+  "total_findings": 454,
+  "by_repo": {
+    "Flowise": 312,
+    "FlowiseChatEmbed": 76,
+    "FlowiseEmbedReact": 66
+  },
+  "by_scanner": {
+    "grype": 417,
+    "codeql": 2,
+    "workflow-inspector": 35
+  },
+  "by_dimension": {
+    "dependencies": 417,
+    "source": 2,
+    "ci_cd": 35
+  },
+  "by_severity": {
+    "medium": 221,
+    "low": 46,
+    "high": 171,
+    "critical": 14,
+    "7.8": 2
+  }
+}

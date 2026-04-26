@@ -1,0 +1,282 @@
+[
+  {
+    "repo": "Flowise",
+    "workflow": "data/repos/Flowise/.github/workflows/docker-image-dockerhub.yml",
+    "line": 30,
+    "severity": "medium",
+    "rule": "unpinned_action",
+    "evidence": "actions/checkout@v6.0.2"
+  },
+  {
+    "repo": "Flowise",
+    "workflow": "data/repos/Flowise/.github/workflows/docker-image-dockerhub.yml",
+    "line": 33,
+    "severity": "medium",
+    "rule": "unpinned_action",
+    "evidence": "docker/setup-qemu-action@v4.0.0"
+  },
+  {
+    "repo": "Flowise",
+    "workflow": "data/repos/Flowise/.github/workflows/docker-image-dockerhub.yml",
+    "line": 36,
+    "severity": "medium",
+    "rule": "unpinned_action",
+    "evidence": "docker/setup-buildx-action@v4.0.0"
+  },
+  {
+    "repo": "Flowise",
+    "workflow": "data/repos/Flowise/.github/workflows/docker-image-dockerhub.yml",
+    "line": 39,
+    "severity": "medium",
+    "rule": "unpinned_action",
+    "evidence": "docker/login-action@v4"
+  },
+  {
+    "repo": "Flowise",
+    "workflow": "data/repos/Flowise/.github/workflows/docker-image-dockerhub.yml",
+    "line": 48,
+    "severity": "medium",
+    "rule": "unpinned_action",
+    "evidence": "docker/build-push-action@v6.19.2"
+  },
+  {
+    "repo": "Flowise",
+    "workflow": "data/repos/Flowise/.github/workflows/docker-image-dockerhub.yml",
+    "line": 63,
+    "severity": "medium",
+    "rule": "unpinned_action",
+    "evidence": "docker/build-push-action@v6.19.2"
+  },
+  {
+    "repo": "Flowise",
+    "workflow": "data/repos/Flowise/.github/workflows/docker-image-ecr.yml",
+    "line": 43,
+    "severity": "medium",
+    "rule": "unpinned_action",
+    "evidence": "actions/checkout@v6.0.2"
+  },
+  {
+    "repo": "Flowise",
+    "workflow": "data/repos/Flowise/.github/workflows/docker-image-ecr.yml",
+    "line": 46,
+    "severity": "medium",
+    "rule": "unpinned_action",
+    "evidence": "docker/setup-qemu-action@v4.0.0"
+  },
+  {
+    "repo": "Flowise",
+    "workflow": "data/repos/Flowise/.github/workflows/docker-image-ecr.yml",
+    "line": 49,
+    "severity": "medium",
+    "rule": "unpinned_action",
+    "evidence": "docker/setup-buildx-action@v4.0.0"
+  },
+  {
+    "repo": "Flowise",
+    "workflow": "data/repos/Flowise/.github/workflows/docker-image-ecr.yml",
+    "line": 53,
+    "severity": "medium",
+    "rule": "unpinned_action",
+    "evidence": "aws-actions/configure-aws-credentials@v6"
+  },
+  {
+    "repo": "Flowise",
+    "workflow": "data/repos/Flowise/.github/workflows/docker-image-ecr.yml",
+    "line": 69,
+    "severity": "medium",
+    "rule": "unpinned_action",
+    "evidence": "aws-actions/amazon-ecr-login@v2"
+  },
+  {
+    "repo": "Flowise",
+    "workflow": "data/repos/Flowise/.github/workflows/docker-image-ecr.yml",
+    "line": 75,
+    "severity": "medium",
+    "rule": "unpinned_action",
+    "evidence": "docker/build-push-action@v6.19.2"
+  },
+  {
+    "repo": "Flowise",
+    "workflow": "data/repos/Flowise/.github/workflows/main.yml",
+    "line": 22,
+    "severity": "medium",
+    "rule": "unpinned_action",
+    "evidence": "actions/checkout@v6"
+  },
+  {
+    "repo": "Flowise",
+    "workflow": "data/repos/Flowise/.github/workflows/main.yml",
+    "line": 23,
+    "severity": "medium",
+    "rule": "unpinned_action",
+    "evidence": "pnpm/action-setup@v4"
+  },
+  {
+    "repo": "Flowise",
+    "workflow": "data/repos/Flowise/.github/workflows/main.yml",
+    "line": 27,
+    "severity": "medium",
+    "rule": "unpinned_action",
+    "evidence": "actions/setup-node@v6"
+  },
+  {
+    "repo": "Flowise",
+    "workflow": "data/repos/Flowise/.github/workflows/main.yml",
+    "line": 41,
+    "severity": "medium",
+    "rule": "unpinned_action",
+    "evidence": "cypress-io/github-action@v7.1.5"
+  },
+  {
+    "repo": "Flowise",
+    "workflow": "data/repos/Flowise/.github/workflows/main.yml",
+    "line": 46,
+    "severity": "medium",
+    "rule": "unpinned_action",
+    "evidence": "cypress-io/github-action@v7.1.5"
+  },
+  {
+    "repo": "Flowise",
+    "workflow": "data/repos/Flowise/.github/workflows/proprietary-path-guard.yml",
+    "line": 38,
+    "severity": "medium",
+    "rule": "unpinned_action",
+    "evidence": "actions/checkout@v6"
+  },
+  {
+    "repo": "Flowise",
+    "workflow": "data/repos/Flowise/.github/workflows/publish-agentflow.yml",
+    "line": 38,
+    "severity": "medium",
+    "rule": "unpinned_action",
+    "evidence": "actions/checkout@v6"
+  },
+  {
+    "repo": "Flowise",
+    "workflow": "data/repos/Flowise/.github/workflows/publish-agentflow.yml",
+    "line": 40,
+    "severity": "medium",
+    "rule": "unpinned_action",
+    "evidence": "pnpm/action-setup@v4"
+  },
+  {
+    "repo": "Flowise",
+    "workflow": "data/repos/Flowise/.github/workflows/publish-agentflow.yml",
+    "line": 44,
+    "severity": "medium",
+    "rule": "unpinned_action",
+    "evidence": "actions/setup-node@v6"
+  },
+  {
+    "repo": "Flowise",
+    "workflow": "data/repos/Flowise/.github/workflows/publish-agentflow.yml",
+    "line": 103,
+    "severity": "medium",
+    "rule": "unpinned_action",
+    "evidence": "actions/checkout@v6"
+  },
+  {
+    "repo": "Flowise",
+    "workflow": "data/repos/Flowise/.github/workflows/publish-agentflow.yml",
+    "line": 105,
+    "severity": "medium",
+    "rule": "unpinned_action",
+    "evidence": "pnpm/action-setup@v4"
+  },
+  {
+    "repo": "Flowise",
+    "workflow": "data/repos/Flowise/.github/workflows/publish-agentflow.yml",
+    "line": 109,
+    "severity": "medium",
+    "rule": "unpinned_action",
+    "evidence": "actions/setup-node@v6"
+  },
+  {
+    "repo": "Flowise",
+    "workflow": "data/repos/Flowise/.github/workflows/publish-agentflow.yml",
+    "line": 1,
+    "severity": "medium",
+    "rule": "contents_write_permission",
+    "evidence": "contents: write"
+  },
+  {
+    "repo": "Flowise",
+    "workflow": "data/repos/Flowise/.github/workflows/test_docker_build.yml",
+    "line": 18,
+    "severity": "medium",
+    "rule": "unpinned_action",
+    "evidence": "actions/checkout@v6"
+  },
+  {
+    "repo": "FlowiseChatEmbed",
+    "workflow": "data/repos/FlowiseChatEmbed/.github/workflows/publish.yml",
+    "line": 74,
+    "severity": "medium",
+    "rule": "unpinned_action",
+    "evidence": "actions/create-github-app-token@v2"
+  },
+  {
+    "repo": "FlowiseChatEmbed",
+    "workflow": "data/repos/FlowiseChatEmbed/.github/workflows/publish.yml",
+    "line": 84,
+    "severity": "medium",
+    "rule": "unpinned_action",
+    "evidence": "actions/checkout@v6"
+  },
+  {
+    "repo": "FlowiseChatEmbed",
+    "workflow": "data/repos/FlowiseChatEmbed/.github/workflows/publish.yml",
+    "line": 92,
+    "severity": "medium",
+    "rule": "unpinned_action",
+    "evidence": "actions/checkout@v6"
+  },
+  {
+    "repo": "FlowiseChatEmbed",
+    "workflow": "data/repos/FlowiseChatEmbed/.github/workflows/publish.yml",
+    "line": 100,
+    "severity": "medium",
+    "rule": "unpinned_action",
+    "evidence": "actions/setup-node@v6"
+  },
+  {
+    "repo": "FlowiseChatEmbed",
+    "workflow": "data/repos/FlowiseChatEmbed/.github/workflows/publish.yml",
+    "line": 221,
+    "severity": "medium",
+    "rule": "unpinned_action",
+    "evidence": "actions/create-github-app-token@v2"
+  },
+  {
+    "repo": "FlowiseChatEmbed",
+    "workflow": "data/repos/FlowiseChatEmbed/.github/workflows/publish.yml",
+    "line": 231,
+    "severity": "medium",
+    "rule": "unpinned_action",
+    "evidence": "actions/checkout@v6"
+  },
+  {
+    "repo": "FlowiseChatEmbed",
+    "workflow": "data/repos/FlowiseChatEmbed/.github/workflows/publish.yml",
+    "line": 239,
+    "severity": "medium",
+    "rule": "unpinned_action",
+    "evidence": "actions/checkout@v6"
+  },
+  {
+    "repo": "FlowiseChatEmbed",
+    "workflow": "data/repos/FlowiseChatEmbed/.github/workflows/publish.yml",
+    "line": 247,
+    "severity": "medium",
+    "rule": "unpinned_action",
+    "evidence": "actions/setup-node@v6"
+  },
+  {
+    "repo": "FlowiseChatEmbed",
+    "workflow": "data/repos/FlowiseChatEmbed/.github/workflows/publish.yml",
+    "line": 1,
+    "severity": "medium",
+    "rule": "contents_write_permission",
+    "evidence": "contents: write"
+  }
+]

@@ -1,6 +1,6 @@
 rank,full_name,html_url,clone_url,default_branch,language,stargazers_count,forks_count,open_issues_count,archived,pushed_at,license
-1,FlowiseAI/Flowise,https://github.com/FlowiseAI/Flowise,https://github.com/FlowiseAI/Flowise.git,main,TypeScript,52237,24216,824,False,2026-04-24T13:12:50Z,NOASSERTION
-2,FlowiseAI/FlowiseChatEmbed,https://github.com/FlowiseAI/FlowiseChatEmbed,https://github.com/FlowiseAI/FlowiseChatEmbed.git,main,TypeScript,436,1580,30,False,2026-04-23T21:37:21Z,
+1,FlowiseAI/Flowise,https://github.com/FlowiseAI/Flowise,https://github.com/FlowiseAI/Flowise.git,main,TypeScript,52295,24225,825,False,2026-04-24T23:55:28Z,NOASSERTION
+2,FlowiseAI/FlowiseChatEmbed,https://github.com/FlowiseAI/FlowiseChatEmbed,https://github.com/FlowiseAI/FlowiseChatEmbed.git,main,TypeScript,436,1580,34,False,2026-04-24T18:56:10Z,
 3,FlowiseAI/FlowiseDocs,https://github.com/FlowiseAI/FlowiseDocs,https://github.com/FlowiseAI/FlowiseDocs.git,main,,256,311,20,False,2026-04-23T10:03:50Z,
 4,FlowiseAI/FlowiseEmbedReact,https://github.com/FlowiseAI/FlowiseEmbedReact,https://github.com/FlowiseAI/FlowiseEmbedReact.git,main,TypeScript,86,102,5,False,2026-04-13T21:42:00Z,
 5,FlowiseAI/FlowisePy,https://github.com/FlowiseAI/FlowisePy,https://github.com/FlowiseAI/FlowisePy.git,main,Python,51,10,3,False,2024-09-23T12:55:35Z,MIT

@@ -1,0 +1,36 @@
+repo,workflow,line,severity,rule,evidence
+Flowise,data/repos/Flowise/.github/workflows/docker-image-dockerhub.yml,30,medium,unpinned_action,actions/checkout@v6.0.2
+Flowise,data/repos/Flowise/.github/workflows/docker-image-dockerhub.yml,33,medium,unpinned_action,docker/setup-qemu-action@v4.0.0
+Flowise,data/repos/Flowise/.github/workflows/docker-image-dockerhub.yml,36,medium,unpinned_action,docker/setup-buildx-action@v4.0.0
+Flowise,data/repos/Flowise/.github/workflows/docker-image-dockerhub.yml,39,medium,unpinned_action,docker/login-action@v4
+Flowise,data/repos/Flowise/.github/workflows/docker-image-dockerhub.yml,48,medium,unpinned_action,docker/build-push-action@v6.19.2
+Flowise,data/repos/Flowise/.github/workflows/docker-image-dockerhub.yml,63,medium,unpinned_action,docker/build-push-action@v6.19.2
+Flowise,data/repos/Flowise/.github/workflows/docker-image-ecr.yml,43,medium,unpinned_action,actions/checkout@v6.0.2
+Flowise,data/repos/Flowise/.github/workflows/docker-image-ecr.yml,46,medium,unpinned_action,docker/setup-qemu-action@v4.0.0
+Flowise,data/repos/Flowise/.github/workflows/docker-image-ecr.yml,49,medium,unpinned_action,docker/setup-buildx-action@v4.0.0
+Flowise,data/repos/Flowise/.github/workflows/docker-image-ecr.yml,53,medium,unpinned_action,aws-actions/configure-aws-credentials@v6
+Flowise,data/repos/Flowise/.github/workflows/docker-image-ecr.yml,69,medium,unpinned_action,aws-actions/amazon-ecr-login@v2
+Flowise,data/repos/Flowise/.github/workflows/docker-image-ecr.yml,75,medium,unpinned_action,docker/build-push-action@v6.19.2
+Flowise,data/repos/Flowise/.github/workflows/main.yml,22,medium,unpinned_action,actions/checkout@v6
+Flowise,data/repos/Flowise/.github/workflows/main.yml,23,medium,unpinned_action,pnpm/action-setup@v4
+Flowise,data/repos/Flowise/.github/workflows/main.yml,27,medium,unpinned_action,actions/setup-node@v6
+Flowise,data/repos/Flowise/.github/workflows/main.yml,41,medium,unpinned_action,cypress-io/github-action@v7.1.5
+Flowise,data/repos/Flowise/.github/workflows/main.yml,46,medium,unpinned_action,cypress-io/github-action@v7.1.5
+Flowise,data/repos/Flowise/.github/workflows/proprietary-path-guard.yml,38,medium,unpinned_action,actions/checkout@v6
+Flowise,data/repos/Flowise/.github/workflows/publish-agentflow.yml,38,medium,unpinned_action,actions/checkout@v6
+Flowise,data/repos/Flowise/.github/workflows/publish-agentflow.yml,40,medium,unpinned_action,pnpm/action-setup@v4
+Flowise,data/repos/Flowise/.github/workflows/publish-agentflow.yml,44,medium,unpinned_action,actions/setup-node@v6
+Flowise,data/repos/Flowise/.github/workflows/publish-agentflow.yml,103,medium,unpinned_action,actions/checkout@v6
+Flowise,data/repos/Flowise/.github/workflows/publish-agentflow.yml,105,medium,unpinned_action,pnpm/action-setup@v4
+Flowise,data/repos/Flowise/.github/workflows/publish-agentflow.yml,109,medium,unpinned_action,actions/setup-node@v6
+Flowise,data/repos/Flowise/.github/workflows/publish-agentflow.yml,1,medium,contents_write_permission,contents: write
+Flowise,data/repos/Flowise/.github/workflows/test_docker_build.yml,18,medium,unpinned_action,actions/checkout@v6
+FlowiseChatEmbed,data/repos/FlowiseChatEmbed/.github/workflows/publish.yml,74,medium,unpinned_action,actions/create-github-app-token@v2
+FlowiseChatEmbed,data/repos/FlowiseChatEmbed/.github/workflows/publish.yml,84,medium,unpinned_action,actions/checkout@v6
+FlowiseChatEmbed,data/repos/FlowiseChatEmbed/.github/workflows/publish.yml,92,medium,unpinned_action,actions/checkout@v6
+FlowiseChatEmbed,data/repos/FlowiseChatEmbed/.github/workflows/publish.yml,100,medium,unpinned_action,actions/setup-node@v6
+FlowiseChatEmbed,data/repos/FlowiseChatEmbed/.github/workflows/publish.yml,221,medium,unpinned_action,actions/create-github-app-token@v2
+FlowiseChatEmbed,data/repos/FlowiseChatEmbed/.github/workflows/publish.yml,231,medium,unpinned_action,actions/checkout@v6
+FlowiseChatEmbed,data/repos/FlowiseChatEmbed/.github/workflows/publish.yml,239,medium,unpinned_action,actions/checkout@v6
+FlowiseChatEmbed,data/repos/FlowiseChatEmbed/.github/workflows/publish.yml,247,medium,unpinned_action,actions/setup-node@v6
+FlowiseChatEmbed,data/repos/FlowiseChatEmbed/.github/workflows/publish.yml,1,medium,contents_write_permission,contents: write
